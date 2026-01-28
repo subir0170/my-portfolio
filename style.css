@@ -313,28 +313,44 @@ section {
 }
 
 .about-content {
-    max-width: 60rem;
-    text-align: left; /* align text to left */
+    flex: 1.5;
 }
 
 .about-content h3 {
-    font-size: 2.6rem;
-    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--main-color);
 }
 
 .about-content p {
     font-size: 1.6rem;
     line-height: 1.8;
     margin-bottom: 2rem;
+    opacity: 0.9;
 }
 
-.btn-box.btns {
-    display: inline-block;
-    width: 15rem;
+.about-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
 }
 
-.btn-box.btns .btn a::before {
-    background: var(--second-bg-color);
+.info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-label {
+    font-size: 1.4rem;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.info-value {
+    font-size: 1.6rem;
+    opacity: 0.9;
 }
 
 /*============================  About Section responsive  ============================*/
